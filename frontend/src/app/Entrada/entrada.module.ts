@@ -2,24 +2,26 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { EntradaRoutingModule } from './entrada-routing.module';
-import { PagesComponent } from './pages/pages.component';
 import { RawMaterialInComponent } from './pages/raw-material-in/raw-material-in.component';
-import { RawMaterialTableComponent } from './pages/raw-material-table/raw-material-table.component';
 import { RawMaterialStockComponent } from './pages/raw-material-stock/raw-material-stock.component';
 import { RawMaterialEditComponent } from './pages/raw-material-edit/raw-material-edit.component';
+import { HttpClientModule } from '@angular/common/http';
+import { TableComponent } from './components/table/table.component';
+import { ButtonAddComponent } from './components/button-add/button-add.component';
 
 
 @NgModule({
   declarations: [
-    PagesComponent,
     RawMaterialInComponent,
-    RawMaterialTableComponent,
     RawMaterialStockComponent,
-    RawMaterialEditComponent
+    RawMaterialEditComponent,
+    TableComponent,
+    ButtonAddComponent
   ],
   imports: [
     CommonModule,
-    EntradaRoutingModule
+    EntradaRoutingModule,
+    HttpClientModule
   ]
 })
 export class EntradaModule { }
