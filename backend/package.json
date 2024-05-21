@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "logistica para produccion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "json-server --watch db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cyberkrane/Bootflas.git"
+  },
+  "author": "Cyberkrane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cyberkrane/Bootflas/issues"
+  },
+  "homepage": "https://github.com/Cyberkrane/Bootflas#readme",
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.0"
+  }
+}
